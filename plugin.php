@@ -272,6 +272,9 @@ class ItemRelationsPlugin
      */
     public static function itemBrowseSql($select, $params)
     {
+        if(empty($_GET['item_relations_property_id'])){
+            return $select;
+        }
         if (is_numeric($_GET['item_relations_property_id'])) {
             $db = get_db();
             // Set the field on which to join.
