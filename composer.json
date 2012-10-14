@@ -1,3 +1,4 @@
 {
-    "name": "literati/plugin-ItemRelations"
+    "name": "literati/plugin-ItemRelations",
+    "type": "omeka-plugin"
 }
